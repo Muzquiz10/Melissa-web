@@ -1,0 +1,92 @@
+/* con el asterico seleccionamos toda la web para darle formato*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: lightgoldenrodyellow;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+#container{
+    /*width: 70%;*/
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid red;
+
+}
+/*Damos formato al header*/
+header{
+    background: brown;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    line-height: 150px;
+    color: pink; /*cambiando el color del texto*/
+    border-bottom: 4 px dashed black;
+
+}
+nav{
+    background: yellowgreen;
+    height:  50px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+nav ul li{
+    float: left; /*para que los elementos se pongan uno al lado del otro*/
+    list-style: none; /*para quitar todos los estilos por defecto*/
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#Content{
+    float: left;
+    width: 80%;
+    min-height: 500px;
+    background: green; 
+    padding: 10px;
+    
+
+}
+
+.article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid black;
+
+}
+.article:first-child{ /*Así seleccionamos el primer artículo*/
+    padding-top: 10px;
+    border-top: 2px solid black;
+}
+.article h2{ /*Así nos selecciona todos elementos h2 dentro de article*/
+    font-size: 25px;
+
+}
+
+aside{
+    float: left;
+    width: calc(20%-20px); /*este cálculo es para compensar los 10px de padding por lado*/
+    min-height: 500px;
+    background: purple;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+
+}
