@@ -1,0 +1,55 @@
+/* Estilo general del cuerpo del documento */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9; /* opcional: color de fondo suave */
+  color: #333; /* opcional: color de texto */
+}
+
+/* Clase para ajustar la imagen */
+.imagen-ajustada {
+  max-width: 100%;
+  width: 300px;       /* puedes ajustar este valor según lo que necesites */
+  height: auto;
+  display: block;
+  margin: 20px auto;  /* centra la imagen horizontalmente */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* opcional: sombra suave */
+}
+.menu-cuadro{
+    background-color: #408396; /* color de fondo */
+    border: 1px solid #131111; /* Color Borde */
+    border-radius: 12px; /* bordes redondeados */
+    padding: 15px 20px; /* espacio interno */
+    box-shadow: 0 4px 12px rgba(53, 84, 122, 0.1); /* sombra */
+    display: inline-block; /* para que se ajuste al contenido */
+    margin: 10px;
+}
+
+/* Opcional: mejora de enlaces dentro del menú */
+.menu-cuadro .nav-link {
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.menu-cuadro .nav-link:hover {
+  background-color: #f0f0f0;
+  text-decoration: none;
+}
+.menu-cuadro.navbar-brand {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+/* Efecto al pasar el ratón */
+.menu-cuadro.navbar-brand:hover {
+  background-color: #ffffff;
+  color: #000000; /* Opcional: cambia el color del texto si lo necesitas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opcional: añade un efecto de sombra */
+}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Solicita tu presupuesto</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">
+        {{ form.nombre.label }} {{ form.nombre(class="form-control") }}
+    </div>
+    <div class="mb-3">
+        {{ form.email.label }} {{ form.email(class="form-control") }}
+    </div>
+    <div class="mb-3">
+        {{ form.tipo_evento.label }} {{ form.tipo_evento(class="form-select") }}
+    </div>
+    <div class="mb-3">
+        {{ form.detalles.label }} {{ form.detalles(class="form-control", rows="4") }}
+    </div>
+    <div>
+        {{ form.submit(class="btn btn-primary") }}
+    </div>
+</form>
+{% endblock %}

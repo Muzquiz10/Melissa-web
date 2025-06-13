@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Melissa Bodas y Eventos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand px-3 menu-cuadro"  href="{{ url_for('index') }}">Melisa Bodas y Eventos</a>
+    <ul class="navbar-nav ms-auto px-3 menu-cuadro">
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('trabajos') }}">Nuestros Trabajos</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('sobre_nosotros') }}">Sobre Nosotras</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('precios') }}">Precios</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('presupuesto') }}">Contacta con nosotras</a></li>
+    </ul>
+
+</nav>
+<div class="container mt-4">
+    {% block content %}{% endblock %}
+</div>
+</body>
+</html>

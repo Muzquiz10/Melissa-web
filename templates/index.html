@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Bienvenidos a Melisa, especializados en decoración de bodas y eventos</h1>
+<p>Hacemos de tus celebraciones momentos inolvidables. Mira nuestros <a href="{{ url_for('trabajos') }}">trabajos anteriores</a>.</p>
+<!-- <img src="{{ url_for('static', filename='images/dulce-buffet-festivo-fruta-tapas-macarrones-y-muchos-dulces.jpg') }}" alt="Imagen Prueba"> -->
+<img class="imagen-ajustada" src="{{ url_for('static', filename='images/dulce-buffet-festivo-fruta-tapas-macarrones-y-muchos-dulces.jpg') }}" alt="Imagen Prueba">
+{% endblock %}
